@@ -1,0 +1,86 @@
+class LilHam {
+  constructor(name) {
+    this.owener = "";
+    this.name = name;
+    this.price = 67;
+  }
+
+  ReelKeepsTurning() {
+    console.log("run, run");
+  }
+  
+  FoodConsumed() {
+    console.log("chew chew");
+  }
+  PriceNeeded() {
+    return this.price;
+  }
+}
+
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.age = 0;
+    this.height = 0;
+    this.weight = 0;
+    this.mood = 0;
+    this.LilHam = [];
+    this.bankAccount = 0;
+  }
+
+  getName() {
+    return this.name;
+  }
+
+  getAge() {
+    return this.age;
+  }
+
+  getWeight() {
+    return this.weight;
+  }
+
+  greet() {
+    console.log(`Hello, ${this.name}`);
+  }
+
+  FoodConsumed(times) {
+    for (let i = 0; i < times; i++) {
+      this.weight++;
+      this.mood++;
+    }
+  }
+  exercise(times) {
+    for (let i = 0; i < times; i++) {
+      this.weight--;
+    }
+  }
+
+  ageUp(years) {
+    for (let i = 0; i < years; i++) {
+      this.age++;
+      this.height++;
+      this.weight++;
+      this.mood--;
+      this.bankAccount += 10;
+    }
+  }
+
+  buyLilHamster(hamster) {
+    this.LilHamster.push(Lilhamster);
+    this.mood += 10;
+    this.bankAccount -= hamster.getPrice();
+  }
+}
+let Kamara = new Person("Kamara");
+Kamara.ageUp(9);
+Kamara.eat(6);
+Kamara.exercise(9);
+Kamara.ageUp(10);
+
+let NewNew = new LilHamm ("NewNew");
+gus.owener = "LilHamm";
+LilHamm.buyHamster(gus);
+LilHamm.ageUp(6);
+LilHamm.eat(6);
+LilHamm.exercise(9);
